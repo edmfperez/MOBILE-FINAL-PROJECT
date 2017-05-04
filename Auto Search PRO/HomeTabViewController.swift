@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeTabViewController.swift
 //  Auto Search PRO
 //
 //  Created by Eduardo L. Perez on 5/2/17.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
