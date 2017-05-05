@@ -15,7 +15,10 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     
     var typePredicate : NSPredicate?
     
-    var carArray : [Cars] = []
+    var carArray = [Cars]()
+    
+    // outlet connection
+    @IBOutlet weak var car_Table: UITableView!
     
     
     override func viewDidLoad() {
@@ -34,13 +37,20 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
-        let car = carArray[indexPath.row]
-        if let myType = car.carType {
-            
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "carCell", for: indexPath) as! SearchTableViewCell
+        
+        cell.lbl_Year.text = carArray[indexPath.row].carYear
+        cell.lbl_Make.text = carArray[indexPath.row].carMake
+        cell.lbl_Model.text = carArray[indexPath.row].carModel
+        cell.lbl_Mileage.text = carArray[indexPath.row].carMileage
+        cell.lbl_Price.text = carArray[indexPath.row].carPrice
+        
+       // var imageName = UIImage(named: carArray[indexPath.row])
+        //cell.img_Car?.image = imageName
+        
+        return cell
     }
-
+    
     
     func fetchByType(carType : String) {
         do{
@@ -51,20 +61,6 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         }
         catch{}
     }
-    
-    func getData(){
-        do{
-            // fetching from the type selected by the prev View
-            let type = selectedCarType
-            fetchRequest.predicate = NSPredicate?(format: "carType == @%", type)
-            // fetching with the request
-            carArray = try context.fetch(Cars.fetchRequest())
-            
-            
-        }
-        catch{
-            print("Fetch Failed")
-        }
-    }
+ 
     
 }
