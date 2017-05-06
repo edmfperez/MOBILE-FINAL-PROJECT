@@ -15,7 +15,6 @@
 		5395A09D1EB915F400D41341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5395A09C1EB915F400D41341 /* Assets.xcassets */; };
 		5395A0A01EB915F400D41341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5395A09E1EB915F400D41341 /* LaunchScreen.storyboard */; };
 		5395A0A81EB93E8E00D41341 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395A0A71EB93E8E00D41341 /* HomeTabViewController.swift */; };
-		5395A0AA1EB93EAB00D41341 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395A0A91EB93EAB00D41341 /* SearchTabViewController.swift */; };
 		5395A0AC1EB9408F00D41341 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395A0AB1EB9408F00D41341 /* SearchResultsViewController.swift */; };
 		5395A0B01EB9634500D41341 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395A0AF1EB9634500D41341 /* CheckoutViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		5395A09F1EB915F400D41341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5395A0A11EB915F400D41341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5395A0A71EB93E8E00D41341 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
-		5395A0A91EB93EAB00D41341 /* SearchTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		5395A0AB1EB9408F00D41341 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		5395A0AF1EB9634500D41341 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,11 +66,10 @@
 			children = (
 				5395A0921EB915F400D41341 /* AppDelegate.swift */,
 				5395A0A71EB93E8E00D41341 /* HomeTabViewController.swift */,
-				5395A0A91EB93EAB00D41341 /* SearchTabViewController.swift */,
 				5395A0AB1EB9408F00D41341 /* SearchResultsViewController.swift */,
+				5330A1511EBB5FE1004B8433 /* CarSelectedViewController.swift */,
 				5395A0AF1EB9634500D41341 /* CheckoutViewController.swift */,
 				5395A0961EB915F400D41341 /* Main.storyboard */,
-				5330A1511EBB5FE1004B8433 /* CarSelectedViewController.swift */,
 				5354E3211EBA81F40063934C /* SearchTableViewCell.swift */,
 				5395A09C1EB915F400D41341 /* Assets.xcassets */,
 				5395A09E1EB915F400D41341 /* LaunchScreen.storyboard */,
@@ -156,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5330A1521EBB5FE1004B8433 /* CarSelectedViewController.swift in Sources */,
-				5395A0AA1EB93EAB00D41341 /* SearchTabViewController.swift in Sources */,
 				5395A0A81EB93E8E00D41341 /* HomeTabViewController.swift in Sources */,
 				5395A0931EB915F400D41341 /* AppDelegate.swift in Sources */,
 				5395A09B1EB915F400D41341 /* Auto_Search_PRO.xcdatamodeld in Sources */,

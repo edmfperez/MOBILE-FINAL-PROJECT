@@ -10,9 +10,20 @@ import UIKit
 
 class CarSelectedViewController: UIViewController {
 
+    
+    var price = String()
+    var make = String()
+    var model = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        lbl_Price.text! = priceArray[selectedIndex]
+        lbl_Make.text! = makeArray[selectedIndex]
+        lbl_Model.text! = modelArray[selectedIndex]
+        
+        img_Car.image = UIImage(named:imageArray[selectedIndex])
+        
         
     }
 
@@ -33,6 +44,9 @@ class CarSelectedViewController: UIViewController {
     
     @IBOutlet weak var txtView_Description: UITextView!
     
-    @IBOutlet weak var btn_AddToCart: UIButton!
+    
+    @IBAction func btn_AddToCart(_ sender: Any) {
+        
+    }
     
 }

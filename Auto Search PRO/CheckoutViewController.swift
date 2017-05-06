@@ -12,24 +12,20 @@ import UIKit
 
     // fill these vars with info from the array
 
-var coreDataYear = ""
-var coreDataMake = ""
-var coreDataModel = ""
-var coreDataPrice = ""
-var coreDataDescription = ""
+
 
 class CheckoutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lbl_cartYear.text = coreDataYear
-        lbl_cartMake.text = coreDataMake
-        lbl_cartModel.text = coreDataModel
-        lbl_cartPrice.text = coreDataPrice
-        lbl_cartDescription.text = coreDataDescription
+        lbl_cartYear.text = yearArray[selectedIndex]
+        lbl_cartMake.text = makeArray[selectedIndex]
+        lbl_cartModel.text = modelArray[selectedIndex]
+        lbl_cartPrice.text = priceArray[selectedIndex]
         
         
+                
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +34,7 @@ class CheckoutViewController: UIViewController {
     }
     
     @IBAction func btn_PurchaseCar(_ sender: Any) {
-        let alertController = UIAlertController(title: "Purchase Confirmation", message: "Your car has been purchased. You will receive an email from the owner to finalize shipping details.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Purchase Confirmation", message: "Your car has been purchased. You will receive an email from the owner to finalize shipping details. Press OK to quit.", preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "OK", style: .default, handler: {ACTION in self.performSegue(withIdentifier: "returnToHome", sender: self)})
         alertController.addAction(OKAction)
         self.present(alertController, animated: true, completion: nil)

@@ -20,8 +20,11 @@ class SearchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    
     @IBOutlet weak var img_Car: UIImageView!
-
+    
     @IBOutlet weak var lbl_Year: UILabel!
     
     @IBOutlet weak var lbl_Make: UILabel!
@@ -31,5 +34,8 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl_Mileage: UILabel!
 
     @IBOutlet weak var lbl_Price: UILabel!
+
+    
+    
     
 }
